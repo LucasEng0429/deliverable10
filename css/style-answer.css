@@ -7,15 +7,11 @@
 
 /* 3. Font size should be twice the normal size  */
 
-
 h1, h2{
-  text-align:center;
-  margin:10px;
-  font-size:200%;
-}
-
-
-
+	text-align: center;
+	margin:10px;
+	font-size:200%
+  }
 
   /******* style the grid container  *******/
 
@@ -37,22 +33,19 @@ h1, h2{
 
   /* 9. Round the corners */
 
-.grid{
-    width:800px;
-    margin:auto;
-    display:grid;
-    grid-template-columns: 25% 25% 25%;
-    gap:10px;
-    background-color:#91f321;
-    background-image:url("../images/background.jpg");
-    border:black solid 3px;
-    border-radius: 20px;
-    justify-content: space-around;
+
+.grid {
+	width: 800px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-gap: 10px;
+	background-color: #91f321;
+	background-image:url("../images/background.jpg");
+	border: 3px solid black;
+	border-radius: 20px	;	
+	justify-content: space-around;
 }
-
-
-
-
 
 
 
@@ -69,16 +62,13 @@ h1, h2{
 
 /* 5. Set a font-size of 30px   */
 
-
-div.grid div{
-  border: white solid 5px;
-  background-color:rgba(231, 157, 224, 0.5);
-  text-align:center;
-  padding:20px;
-  font-size:30px;
+.grid > div {
+	border: 5px solid white;
+	background-color: rgba(231, 157, 224, 0.5);
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
 }
-
-
 
 /* Go back to the parent container and play with ...*/
     /*justify-content:; */
@@ -89,43 +79,25 @@ div.grid div{
 
 /* Now try and style the individual boxes using grid-column  to match the picture at 1200px.*/
 
-div.item1{
-grid-column-start:1;
+.item2, .item5{
+	grid-column-start: 3;
 }
 
-div.item2{
-grid-column-start: 3;
-}
-div.item3{
-  grid-row-start: 2;
-  grid-column-start:2;
-}
-div.item4{
-  grid-row-start: 3;
-  grid-column-start:1;
-}
-div.item5{
-  grid-row-start:3;
-  grid-column-start:3;
+.item3{
+	grid-column-start: 2;
 }
 
-div.item_a{
-  grid-row-start:3;
-  grid-column-start:3;
+.item4{
+	grid-column-start: 1;
 }
-div.item_b{
-  grid-column-start:3;
-  grid-row-start:1;
+
+
+.item_a{
+	grid-column-start: 3;
+	grid-row-start: 3;
+
 }
-div.item_c{
-  grid-column-start:1;
-  grid-row-start:2;
-}
-div.item_d{
-  grid-column-start:2;
-  grid-row-start:2;
-}
-div.item_e{
-  grid-column-start:3;
-  grid-row-start:2;
+.item_b{
+	grid-column-start: 3;
+
 }
